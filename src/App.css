@@ -30,6 +30,9 @@ a:hover {
 .main {
   flex: 0.8;
   width: 100%;
+  position: relative;
+  padding-bottom: 8rem;
+  background-color: var(--light-blue);
 }
 .footer {
   flex: 1;
@@ -38,12 +41,19 @@ a:hover {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
 }
 .routes {
-  padding: 20px;
+  padding: 20px 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .routes {
+    padding: 20px;
+  }
 }
 
 .coin-detail-container {
@@ -72,14 +82,8 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.stats-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-}
-
 .stats-container h2 {
+  width: 50%;
   font-weight: 700;
   font-size: 1.4rem;
   margin-top: 20px;
@@ -119,7 +123,7 @@ a:hover {
 .coin-desc-link {
   display: flex;
   gap: 40px;
-  margin-top: 40px;
+  margin: 40px;
   padding-top: 20px;
 }
 
