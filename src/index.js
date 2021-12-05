@@ -1,14 +1,13 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
-// Redux Toolkit
 import { Provider } from 'react-redux';
-import { store } from './app/store';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import App from './App';
+import store from './app/store';
 
 import 'antd/dist/antd.css';
-import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,5 +17,6 @@ ReactDOM.render(
       </Provider>
     </Router>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
+
