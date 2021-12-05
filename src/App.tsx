@@ -1,15 +1,15 @@
-import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import { Layout, Typography, Space } from "antd";
-import { Navbar } from "./components";
+import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import { Layout, Typography, Space } from 'antd';
+import { Navbar } from './components';
 import {
   Home,
   Exchanges,
   Cryptocurrencies,
   CryptoDetails,
   News,
-} from "./pages";
-import "./App.css";
+} from './pages';
+import './App.css';
 
 function App() {
   return (
@@ -29,20 +29,20 @@ function App() {
             </Routes>
           </div>
         </Layout>
-      </div>
-      <div className="footer">
-        <Typography.Title
-          level={5}
-          style={{ color: "white", textAlign: "center" }}
-        >
-          Cryptoverse <br />
-          All rights reserved
-        </Typography.Title>
-        <Space>
-          <Link to="/">Home</Link>
-          <Link to="/exchanges">Exchanges</Link>
-          <Link to="/news">News</Link>
-        </Space>
+        <div className="footer">
+          <Typography.Title
+            level={5}
+            style={{ color: 'white', textAlign: 'center' }}
+          >
+            Cryptoverse <br />
+            All rights reserved
+          </Typography.Title>
+          <Space>
+            <Link to="/">Home</Link>
+            <Link to="/exchanges">Exchanges</Link>
+            <Link to="/news">News</Link>
+          </Space>
+        </div>
       </div>
     </div>
   );
